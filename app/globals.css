@@ -1,9 +1,21 @@
 @import "tailwindcss";
 
-:root {
-  --bg-button: #2D5BFF;
-}
+@layer base {
+  :root {
+    --color-primary: #2D5BFF;
+    --color-bg: #ffffff;
+    --color-text: #0a0a0a;
+  }
 
-@theme {
-  --color-bg-button: var(--bg-button);
+  .theme-violet {
+    --color-primary: #AF4BFE;
+    --color-bg: #ffffff;
+    --color-text: #0a0a0a;
+  }
+
+  .dark {
+    --color-primary: #302f2f;
+    --color-bg: #0a0a0a;
+    --color-text: #f5f5f5;
+  }
 }
