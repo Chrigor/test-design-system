@@ -1,4 +1,4 @@
-import { Meta, Controls, Primary } from '@storybook/addon-docs/blocks';
+import { Meta, Controls, Primary, Canvas } from '@storybook/addon-docs/blocks';
 import * as Story from "./Button.stories.tsx";
 
 <Meta of={Story} />
@@ -6,5 +6,7 @@ import * as Story from "./Button.stories.tsx";
 # Botão
 This is a button component
 <Primary />
+<Canvas of={Story.VioletTheme} />
+<Canvas of={Story.DarkTheme} />
 <Controls />
 

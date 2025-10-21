@@ -20,20 +20,12 @@ export const VioletTheme: Story = {
   args: {
     children: "Violet Button",
   },
-  render: (args) => (
-    <div className="theme-violet">
-      <Button {...args} />
-    </div>
-  ),
+  render: (args) => <Button {...args} className="theme-violet" />,
 };
 
 export const DarkTheme: Story = {
   args: {
     children: "Dark Button",
   },
-  render: (args) => (
-    <div className="dark">
-      <Button {...args} />
-    </div>
-  ),
+  render: (args) => <Button {...args} className="dark" />,
 };
