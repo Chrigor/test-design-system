@@ -1,5 +1,17 @@
 @import "tailwindcss";
 
+@font-face {
+  font-family: 'Mulish';
+  src: url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+* {
+  font-family: 'Mulish', sans-serif;
+}
+
 @layer base {
   :root {
     --color-primary: #2D5BFF;
@@ -18,4 +30,58 @@
     --color-bg: #0a0a0a;
     --color-text: #f5f5f5;
   }
+}
+
+@theme {
+  --font-mulish: 'Mulish', sans-serif;
+
+  --breakpoint-mobile: 640px;
+  --breakpoint-tablet: 1024px;
+  --breakpoint-desktop: 1440px;
+  --breakpoint-tv: 1920px;
+
+  --shadow-sm: 0px 0px 10px rgba(132,132,132, 15%);
+  --shadow-md: 0px 0px 10px rgba(132,132,132, 30%);
+  --shadow-lg: 0px 0px 10px rgba(132,132,132, 50%);
+  --shadow-focus: 0px 0px 0px 2px #643296;
+  --shadow-outline: 0px 0px 0px 2px #E8E8E8;
+  --shadow-button-focus: 0px 0px 0px 2px #AF4BFE;
+
+  --blur-sm: blur(4px);
+  --blur-md: blur(8px);
+  --blur-lg: blur(12px);
+
+  --spacing-none: 0px;
+  --spacing-4xs: 8px;
+  --spacing-2xs: 12px;
+  --spacing-xs: 16px;
+  --spacing-sm: 20px;
+  --spacing-md: 24px;
+  --spacing-lg: 32px;
+  --spacing-xl: 40px;
+  --spacing-2xl: 48px;
+  --spacing-4xl: 56px;
+
+  --spacing-0: none;
+  --spacing-1: var(--spacing-4xs);
+  --spacing-2: var(--spacing-2xs);
+  --spacing-3: var(--spacing-xs);
+  --spacing-4: var(--spacing-sm);
+  --spacing-5: var(--spacing-md);
+  --spacing-6: var(--spacing-lg);
+  --spacing-7: var(--spacing-xl);
+  --spacing-8: var(--spacing-2xl);
+  --spacing-9: var(--spacing-4xl);
+
+  --radius-none: none;
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-full: 9999px;
+
+  --text-xs: 12px;
+  --text-sm: 14px;
+  --text-md: 16px;
+  --text-lg: 18px;
+  --text-xl: 20px;
 }

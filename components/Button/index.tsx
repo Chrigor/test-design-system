@@ -5,13 +5,16 @@ export default function Button({ className, ...props }: ButtonProps) {
     <button
       {...props}
       className={`
-        rounded-[8px]
+        rounded-md
         bg-(--color-primary)
         text-white
         cursor-pointer
-        px-[32px] py-[12px]
+        px-xs
+        py-2xs
         transition-colors
         hover:opacity-90
+        blur-lg
+        text-md
         ${className ?? ""}
       `}
     />
