@@ -1,22 +1,37 @@
-export type ButtonProps = React.ButtonHTMLAttributes<HTMLButtonElement>;
+export type ButtonProps = React.ButtonHTMLAttributes<HTMLButtonElement> & {
+  variant?: "primary" | "secondary";
+};
 
-export default function Button({ className, ...props }: ButtonProps) {
+export default function Button({
+  className,
+  variant = "primary",
+  disabled,
+  ...props
+}: ButtonProps) {
+  const generalStyles = `rounded-md px-sm py-2xs cursor-pointer hover:opacity-90 trasition duration-200 ease-in-out ${className}`;
+
+  if (disabled) {
+    return (
+      <button
+        {...props}
+        disabled={disabled}
+        className={`bg-disabled text-disabled ${generalStyles} cursor-not-allowed!`}
+      />
+    );
+  }
+
+  const variants = {
+    primary: "bg-(--color-primary) text-white",
+    secondary: "bg-emerald-400 text-emerald-900",
+  };
+
+  const variantStyles = variants[variant];
+
   return (
     <button
       {...props}
-      className={`
-        rounded-md
-        bg-(--color-primary)
-        text-white
-        cursor-pointer
-        px-xs
-        py-2xs
-        transition-colors
-        hover:opacity-90
-        blur-lg
-        text-md
-        ${className ?? ""}
-      `}
+      disabled={disabled}
+      className={`${generalStyles} ${variantStyles}`}
     />
   );
 }
