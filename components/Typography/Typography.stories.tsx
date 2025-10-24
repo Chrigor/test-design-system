@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from "@storybook/nextjs-vite";
 import Typography, { type TypographyProps } from "./index";
 
 const meta = {
-  title: "Atoms/Typography",
+  title: "Design System/Atoms/Typography",
   component: Typography,
   argTypes: {
     children: { type: "string", control: "text" },

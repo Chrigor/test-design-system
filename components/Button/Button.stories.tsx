@@ -2,8 +2,11 @@ import type { Meta, StoryObj } from "@storybook/nextjs-vite";
 import Button, { type ButtonProps } from "./";
 
 const meta = {
-  title: "Molecules/Button",
+  title: "Design System/Molecules/Button",
   component: Button,
+  argTypes: {
+    onClick: { action: "clicked" },
+  }
 } satisfies Meta<ButtonProps>;
 
 export default meta;

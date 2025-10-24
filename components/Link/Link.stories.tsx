@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from "@storybook/nextjs-vite";
 import Link, { type LinkProps } from "./index";
 
 const meta = {
-  title: "Molecules/Link",
+  title: "Design System/Molecules/Link",
   component: Link,
   argTypes: {
     disabled: { type: "boolean", control: "boolean" },
