@@ -1,5 +1,5 @@
 {
-  "name": "alfabit-design-system",
+  "name": "evnts-test-ds",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -36,5 +36,22 @@
     "tailwindcss": "^4",
     "typescript": "^5",
     "vitest": "^3.2.4"
-  }
+  },
+  "description": "This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).",
+  "main": "components/index.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Chrigor/test-design-system.git"
+  },
+  "author": "Chrigor",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Chrigor/test-design-system/issues"
+  },
+  "homepage": "https://github.com/Chrigor/test-design-system#readme",
+  "files": [
+    "app/globals.css",
+    "components/*",
+    "public/*"
+  ]
 }
